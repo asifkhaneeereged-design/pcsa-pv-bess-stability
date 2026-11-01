@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code or dataset, please cite the paper below."
+title: "Physically Consistent Early Stability Assessment of Grid-Following and Grid-Forming PV–Battery Plants via Monotone Ordinal Learning"
+authors:
+  - family-names: "[Last name]"
+    given-names: "[First name]"
+repository-code: "https://github.com/[username]/pcsa-pv-bess-stability"
+license: MIT
+version: "1.0.0"

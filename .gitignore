@@ -1,0 +1,9 @@
+data/
+*.csv
+*.xlsx
+slprj/
+*.slxc
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+_RESULTS_JOURNAL/
