@@ -1,5 +1,7 @@
 # Physically Consistent Early Stability Assessment of PV–Battery Plants
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23855800.svg)](https://doi.org/10.5281/zenodo.23855800)
+
 Code for the paper *"Physically Consistent Early Stability Assessment of Grid-Following and Grid-Forming PV–Battery Plants via Monotone Ordinal Learning"* (Scientific Reports, under review).
 
 ## Method
@@ -8,14 +10,11 @@ The framework assesses the stability of a PV–battery plant from the first 20�
 
 ## Simulation model
 
-The EMT simulations use the MathWorks Simscape Electrical example **"Evaluate Performance of Grid-Forming Battery Energy Storage Systems in Solar PV Plants"**, a 100 MWp PV plant with a 60 MWh / 35 MW battery energy storage system under grid-following or grid-forming control:
-https://www.mathworks.com/help/simscape-electrical/renewable-energy.html
-
-The model is not redistributed here. `run_scenario.m` and `run_sweep.m` apply the grid strength, BESS controller and disturbance of each run and generate the 476 simulations (MATLAB R2025b, Simscape Electrical).
+The EMT simulations use the MathWorks Simscape Electrical example **"Evaluate Performance of Grid-Forming Battery Energy Storage Systems in Solar PV Plants"**, a 100 MWp PV plant with a 60 MWh / 35 MW battery energy storage system under grid-following or grid-forming control. The model is not redistributed here. `run_scenario.m` and `run_sweep.m` apply the grid strength, BESS controller and disturbance of each run and generate the 476 simulations (MATLAB R2025b, Simscape Electrical).
 
 ## Dataset
 
-https://doi.org/10.5281/zenodo.XXXXXXX (see DATA.md)
+The machine-learning dataset (base features, labels and physical stability indicators of the 476 runs) is available on Zenodo: https://doi.org/10.5281/zenodo.23855800 (see DATA.md). The raw EMT waveforms are available from the corresponding author on reasonable request.
 
 ## Scripts
 
@@ -34,8 +33,4 @@ https://doi.org/10.5281/zenodo.XXXXXXX (see DATA.md)
 | `10_scenario_summary.py` | Scenario statistics |
 | `11_fig_poi_voltage.py` | POI voltage figure |
 
-Run the scripts in order after `pip install -r requirements.txt`. Set the data folder with the environment variable `PCSA_DATA`.
-
-## License
-
-Code: MIT. Dataset: CC BY 4.0.
+Install the requirements with `pip install -r requirements.txt` and set the data folder with the environment variable `PCSA_DATA`. To reproduce the results from the Zenodo dataset, place its four files in the
