@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23855800.svg)](https://doi.org/10.5281/zenodo.23855800)
 
-Code for the paper *"Physically Consistent Early Stability Assessment of Grid-Following and Grid-Forming PV–Battery Plants via Monotone Ordinal Learning"* (Scientific Reports, under review).
+Code for the paper *"Physically Consistent Early Stability Assessment of Grid-Following and Grid-Forming PV–Battery Plants via Monotone Ordinal Learning"* 
 
 ## Method
 
